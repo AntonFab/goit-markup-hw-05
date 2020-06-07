@@ -15,6 +15,7 @@ color: #2F303A - фон футтера
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --primary-icons-color: #afb1b8;
+  --cubic-bezier-standard: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -34,6 +35,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+
+  transition: color 250ms var(--cubic-bezier-standard);
 }
 
 .logo-web {
@@ -89,6 +92,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms var(--cubic-bezier-standard);
 }
 
 .site-nav a:hover,
@@ -103,6 +108,8 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms var(--cubic-bezier-standard);
 }
 
 .contacts:hover,
@@ -316,6 +323,9 @@ ul {
   height: 44px;
   border-radius: 50%;
   color: var(--soc-icons-color);
+
+  transition: background-color 250ms var(--cubic-bezier-standard),
+    color 250ms var(--cubic-bezier-standard);
 }
 
 .soc-icons {
@@ -348,6 +358,9 @@ ul {
   justify-content: center;
   color: var(--primary-icons-color);
   fill: currentColor;
+
+  transition: border 250ms var(--cubic-bezier-standard),
+    color 250ms var(--cubic-bezier-standard);
 }
 
 .client-logo:hover {
@@ -391,6 +404,8 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+
+  transition: color 250ms var(--cubic-bezier-standard);
 }
 
 .footer-contacts:hover,
@@ -424,6 +439,8 @@ ul {
   height: 44px;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--cubic-bezier-standard);
 }
 
 .footer-icons:hover {
